@@ -4,6 +4,7 @@ using MDS.Storage.MsSqlStorage;
 using MDS.Storage.MySqlStorage;
 using MDS.Storage.SQLiteStorage;
 using MDS.Settings;
+using MDS.Storage.MongoDBStorage;
 
 namespace MDS.Storage
 {
@@ -36,6 +37,10 @@ namespace MDS.Storage
             else if (storageType.Equals("SQLite", StringComparison.OrdinalIgnoreCase))
             {
                 storageManager = new SqliteStorageManager();
+            }
+            else if (storageType.Equals("MongoDB", StringComparison.OrdinalIgnoreCase))
+            {
+                storageManager = new MongoDBStorageManager();
             }
             else //Default storage manager
             {

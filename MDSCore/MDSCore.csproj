@@ -82,6 +82,15 @@
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\packages\MongoDB.Bson.2.2.3\lib\net45\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\packages\MongoDB.Driver.2.2.3\lib\net45\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core">
+      <HintPath>..\packages\MongoDB.Driver.Core.2.2.3\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\MySql.Data.6.9.8\lib\net45\MySql.Data.dll</HintPath>
@@ -169,6 +178,7 @@
     <Compile Include="Storage\IStorageManager.cs" />
     <Compile Include="Storage\MDSMessageRecord.cs" />
     <Compile Include="Storage\MemoryStorage\MemoryStorageManager.cs" />
+    <Compile Include="Storage\MongoDBStorage\MongoDBStorageManager.cs" />
     <Compile Include="Storage\MsSqlStorage\MsSqlStorageManager.cs" />
     <Compile Include="Storage\MySqlStorage\MySqlNetStorageManager.cs" />
     <Compile Include="Storage\MySqlStorage\MySqlODBCStorageManager.cs" />
