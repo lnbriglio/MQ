@@ -124,6 +124,7 @@ namespace MDS
         /// </summary>
         private void CorrectDatabase()
         {
+            //TODO Revisar este ítem no figura en los settings
             if (_settings["CheckDatabaseOnStartup"] != "true")
             {
                 return;
